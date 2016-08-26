@@ -41,6 +41,9 @@ class TinymceServiceProvider extends ServiceProvider
 
         // load controller
         $this->app->make('Petehouston\Tinymce\TinymceController');
+
+        // load helper
+        include __DIR__.'/helpers.php';
     }
 
 }

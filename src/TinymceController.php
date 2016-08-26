@@ -20,11 +20,7 @@ class TinymceController extends Controller
         $filename = 'image_'.time().'_'.$image->hashName();
         $image = $image->move(public_path('img'), $filename);
 
-        return ("
-            <script>
-            top.$('.mce-btn.mce-open').parent().find('.mce-textbox').val('/img/".$filename."').closest('.mce-window').find('.mce-primary').click();
-            </script>
-        ");
+        return mce_back($filename);
     }
 
 }
