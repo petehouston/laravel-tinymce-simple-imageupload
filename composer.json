@@ -1,0 +1,30 @@
+{
+    "name": "petehouston/laravel-tinymce-simple-imageupload",
+    "description": "Simple image upload for TinyMCE in Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "laravel 5",
+        "tinymce",
+        "image upload",
+        "php"
+    ],
+    "homepage": "https://github.com/petehouston/laravel-tinymce-simple-imageupload",
+    "authors": [
+        {
+            "name": "Pete Houston",
+            "email": "contact@petehouston.com",
+            "homepage": "http://petehouston.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : "~5.5|~7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Petehouston\\Tinymce\\": "src"
+        }
+    },
+}
