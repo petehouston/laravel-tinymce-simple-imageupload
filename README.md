@@ -4,7 +4,7 @@ The simple image upload for TinyMCE in Laravel.
 
 ## Why made this?
 
-Because, I use TinyMCE and basically, it is pretty hard to understand how to upload images directly to the editor while editing content. There are many TinyMCE image uploaders out there, but they are too complicated in functions, and I only need one core use-case, pick up an image to upload.
+Because, I use TinyMCE and basically, it is pretty hard to understand how to upload images directly to the editor while editing content. There are many TinyMCE image uploaders out there, but they are too complicated in functions, and I only need one core use-case, **pick up an image to upload**.
 
 That's it, so I create this package for my projects to re-use. Well, if you want, you can use this too.
 
@@ -47,12 +47,13 @@ There is a setup example in the package, you can try in your project by adding a
 Route::get('/tinymce_example', function () {
     return view('mceImageUpload::example');
 });
+```
 
 ### Some notes
 
 **The image upload handler**
 
-I setup already a controller `Petehouston\Tinymce\TinymceController` which implements a method for image uploading.
+I setup already a controller [`Petehouston\Tinymce\TinymceController`](https://github.com/petehouston/laravel-tinymce-simple-imageupload/blob/master/src/TinymceController.php) which implements a method for image uploading.
 
 As you can see it will store all uploaded images in `public/img` directory, the name is like a concatenated hash,
 
@@ -69,9 +70,9 @@ If you don't want to pre-config of the package, make yours.
 While including the uploading form, pass in the url of handling post image upload
 
 ```
-@include('mceImageUpload::upload_form', ['upload_url' => 'your_own_url_for_image_upload'])
+@include('mceImageUpload::upload_form', ['upload_url' => 'YOUR_URL_FOR_HANDLING_IMAGE_UPLOAD'])
 ```
 
-Add a method for handling image upload that **should return the same result** as in `Petehouston\Tinymce\TinymceController`.
+Add a method for handling image upload that **should return the same result** as in [`Petehouston\Tinymce\TinymceController`](https://github.com/petehouston/laravel-tinymce-simple-imageupload/blob/master/src/TinymceController.php).
 
 
