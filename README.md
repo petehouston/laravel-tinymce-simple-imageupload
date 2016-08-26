@@ -14,6 +14,17 @@ That's it, so I create this package for my projects to re-use. Well, if you want
 $ composer require "petehouston/laravel-tinymce-simple-imageupload"
 ```
 
+You need to register into the `config/app.php`,
+
+```
+    'providers' => [
+        ...
+
+        Petehouston\Tinymce\TinymceServiceProvider::class,
+
+    ]
+```
+
 ## Usage
 
 In the view that contain setup for TinyMCE, you need to include the upload view, add this line at the bottom,
