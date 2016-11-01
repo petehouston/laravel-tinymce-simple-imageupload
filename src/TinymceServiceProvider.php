@@ -25,7 +25,7 @@ class TinymceServiceProvider extends ServiceProvider
 
         // ability to publish view
         $this->publishes([
-            __DIR__.'/views' => resource_path('views/petehouston/tinymce'),
+            __DIR__.'/views' => base_path('resources/views/petehouston/tinymce'),
         ]);
     }
 

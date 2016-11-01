@@ -8,6 +8,8 @@ Because, I use TinyMCE and basically, it is pretty hard to understand how to upl
 
 That's it, so I create this package for my projects to re-use. Well, if you want, you can use this too.
 
+**This package works with Laravel 5.0+.**
+
 ## Installation
 
 ```
@@ -49,6 +51,12 @@ Next step is to add this config to the `tinymce` object,
 ```
 
 That's all, now you should be able to upload image directly to the editor while writing content.
+
+**You can publish view in case you need to customize in `resources/views` directory**
+
+```
+$ php artisan vendor:publish --provider=Petehouston\Tinymce\TinymceServiceProvider
+```
 
 ### Try example
 
