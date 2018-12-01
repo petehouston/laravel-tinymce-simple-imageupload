@@ -16,7 +16,7 @@ That's it, so I create this package for my projects to re-use. Well, if you want
 $ composer require "petehouston/laravel-tinymce-simple-imageupload"
 ```
 
-You need to register into the `config/app.php`,
+For laravel version 5.4 and older, you need to register the service provider in  `config/app.php`.
 
 ```
     'providers' => [
