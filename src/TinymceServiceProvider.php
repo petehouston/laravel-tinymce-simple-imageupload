@@ -23,6 +23,9 @@ class TinymceServiceProvider extends ServiceProvider
         // load views
         $this->loadViewsFrom(realpath(__DIR__.'/views'), 'mceImageUpload');
 
+        // load routes
+        include __DIR__.'/routes.php';
+
         // ability to publish view
         $this->publishes([
             __DIR__.'/views' => base_path('resources/views/petehouston/tinymce'),
