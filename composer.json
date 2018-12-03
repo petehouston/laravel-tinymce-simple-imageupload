@@ -27,5 +27,12 @@
         "psr-4": {
             "Petehouston\\Tinymce\\": "src"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Petehouston\\Tinymce\\TinymceServiceProvider"
+            ]
+        }
     }
 }
