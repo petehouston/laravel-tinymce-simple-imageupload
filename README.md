@@ -10,10 +10,19 @@ That's it, so I create this package for my projects to re-use. Well, if you want
 
 **This package works with Laravel 5.0+.**
 
+
 ## Installation
 
+For Laravel 5.5+:
+
 ```
-$ composer require "petehouston/laravel-tinymce-simple-imageupload"
+$ composer require "petehouston/laravel-tinymce-simple-imageupload:~1.2"
+```
+
+For Laravel before 5.5:
+
+```
+$ composer require "petehouston/laravel-tinymce-simple-imageupload:~1.1"
 ```
 
 For laravel version 5.4 and older, you need to register the service provider in  `config/app.php`.
