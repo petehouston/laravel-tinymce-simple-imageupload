@@ -16,7 +16,7 @@ That's it, so I create this package for my projects to re-use. Well, if you want
 For Laravel 5.5+:
 
 ```
-$ composer require "petehouston/laravel-tinymce-simple-imageupload:~1.2"
+$ composer require "petehouston/laravel-tinymce-simple-imageupload:~1.3"
 ```
 
 For Laravel before 5.5:
