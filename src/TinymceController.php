@@ -18,7 +18,7 @@ class TinymceController extends Controller
         $image = $request->file('image');
 
         $filename = 'image_'.time().'_'.$image->hashName();
-        $image = $image->move(public_path('img'), $filename);
+        $image = $image->move(public_path(env('TINY_MCE_UPLOAD_DIRECTORY', 'img')), $filename);
 
         return mce_back($filename);
     }
